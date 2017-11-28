@@ -24,17 +24,15 @@ class Clock extends Component {
     console.log('seconds', seconds, 'minutes', minutes, 'hours', hours, 'days', days);
   }
 
-
-
   render() {
     this.getTimeUntil(this.props.deadline);
 
     return (
       <div>
-        <div className="Clock-days">{this.state.days} 14 days</div>
-        <div className="Clock-hours">{this.state.hours} 30 hours</div>
-        <div className="Clock-minutes">{this.state.minutes} 15 minutes</div>
-        <div className="Clock-seconds">{this.state.seconds} 10 seconds</div>
+        <div className="Clock-days">{this.state.days} days</div>
+        <div className="Clock-hours">{this.state.hours} hours</div>
+        <div className="Clock-minutes">{this.state.minutes} minutes</div>
+        <div className="Clock-seconds">{this.state.seconds} seconds</div>
       </div>
     )
   }
