@@ -11,7 +11,6 @@ class App extends Component {
     }
   }
 
-
   changeDeadline(){
     this.setState({deadline: this.state.newDeadline});
   }
